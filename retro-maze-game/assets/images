@@ -1,0 +1,99 @@
+To create a new project for a retro-futuristic maze game, we will follow a structured, step-by-step file generation process. This approach ensures that the project remains organized and modular. Below is a detailed outline of the steps involved in setting up the project, including the necessary files and their purposes.
+
+### Project Structure
+
+1. **Project Root Directory**
+   - `Maze/`
+     - `logic/`
+     - `gui/`
+     - `utils/`
+     - `assets/`
+     - `main.py`
+     - `prompt.txt`
+
+### Step-by-Step File Generation Process
+
+#### Step 1: Create the Folder Structure
+- Create the main project folder named `Maze`.
+- Inside the `Maze` folder, create the following subfolders:
+  - `logic/` - For core game logic files.
+  - `gui/` - For graphical user interface files.
+  - `utils/` - For utility functions and configurations.
+  - `assets/` - For storing visual and audio assets.
+
+#### Step 2: Create Empty Files
+- Inside the `logic/` folder, create the following empty files:
+  - `adaptive_logic.py`
+  - `ai_logic.py`
+  - `maze_logic.py`
+  - `player_vs_bot.py`
+  - `singleplayer.py`
+
+- Inside the `gui/` folder, create the following empty files:
+  - `main_menu.py`
+  - `game_ui.py`
+  - `pause_menu.py`
+  - `retro_theme.py`
+
+- Inside the `utils/` folder, create the following empty files:
+  - `config.py`
+  - `helpers.py`
+
+- Create an empty `main.py` file in the root directory.
+
+- Create a `prompt.txt` file in the root directory to document the project overview and steps.
+
+#### Step 3: Core Logic Integration
+- Integrate the existing core logic files into the `logic/` folder:
+  - Move `adaptivemaze.py` to `logic/adaptive_logic.py`.
+  - Move `ai_bot_trainer_multicore.py` and `ai_gpu.py` to `logic/ai_logic.py`.
+  - Move `mazegenerator.py` to `logic/maze_logic.py`.
+  - Move `player_vs__bot.py` to `logic/player_vs_bot.py`.
+  - Move `playertracker.py` to `logic/singleplayer.py`.
+
+#### Step 4: Main File (main.py)
+- In `main.py`, implement the following:
+  - Initialize the game window in full-screen mode.
+  - Load the main menu.
+  - Handle transitions between the main menu, game modes, and pause menu.
+
+#### Step 5: Main Menu (gui/main_menu.py)
+- In `main_menu.py`, implement:
+  - Display options for "Single Player" and "Player vs Bot."
+  - Use retro-futuristic fonts and glowing buttons.
+  - Transition to the selected game mode when a button is clicked.
+
+#### Step 6: Game UI (gui/game_ui.py)
+- In `game_ui.py`, implement:
+  - Render the maze and player/bot positions.
+  - Display the inner game panel (800x800 pixels) centered on the screen.
+  - Use assets from the `assets` folder for retro-futuristic visuals.
+
+#### Step 7: Pause Menu (gui/pause_menu.py)
+- In `pause_menu.py`, implement:
+  - Allow the player to pause the game.
+  - Provide options to resume or quit.
+  - Use the retro-futuristic theme for consistency.
+
+#### Step 8: Retro Theme (gui/retro_theme.py)
+- In `retro_theme.py`, implement:
+  - Define colors, fonts, and styles for the retro-futuristic theme.
+  - Load assets (e.g., neon walls, glowing effects) from the `assets` folder.
+
+#### Step 9: Utility Functions (utils/)
+- In `config.py`, define constants like screen size, colors, and font paths.
+- In `helpers.py`, provide utility functions for loading assets and handling events.
+
+#### Step 10: Assets
+- Create the `assets` folder and include:
+  - **Fonts**: Retro-futuristic fonts for UI text.
+  - **Images**: Neon walls, glowing player/bot sprites, and other visual elements.
+  - **Sounds**: Background music and sound effects for interactions.
+
+#### Step 11: Testing and Polishing
+- Test each game mode (Single Player and Player vs Bot) to ensure functionality.
+- Adjust the retro-futuristic theme for visual appeal.
+- Optimize performance for smooth animations and transitions.
+
+### Conclusion
+By following this structured approach, you will create a well-organized retro-futuristic maze game project. Each step focuses on a specific aspect of the game, ensuring that the development process is manageable and efficient.

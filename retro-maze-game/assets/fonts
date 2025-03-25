@@ -1,0 +1,25 @@
+Project Root
+│
+├── main.py
+│
+├── gui
+│   ├── main_menu.py
+│   ├── game_ui.py
+│   ├── pause_menu.py
+│   └── retro_theme.py
+│
+├── logic
+│   ├── adaptive_logic.py
+│   ├── ai_logic.py
+│   ├── maze_logic.py
+│   ├── player_vs_bot.py
+│   └── singleplayer.py
+│
+├── utils
+│   ├── config.py
+│   └── helpers.py
+│
+└── assets
+    ├── fonts
+    ├── images
+    └── sounds
